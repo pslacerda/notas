@@ -37,8 +37,6 @@ http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html
 
 ```javascript
 #!/usr/bin/jjs -scripting
-print(1 + 1);
-
 var cont = 1;
 var files = `ls`.split('\n');
 var map = new java.util.HashMap();
