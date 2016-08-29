@@ -5,6 +5,12 @@ A try-with-resources statement in Java 7 is used to close resources automaticall
 
 https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
 
+```java
+try (T t = T(); U u = U()) {
+ System.out.println(t);
+ System.out.println(u);
+} // finally { u.close(); t.close() }
+```
 
 Nashorn engine
 ==============
