@@ -31,7 +31,7 @@ with T() as t:     # t.__enter__()
 Nashorn engine
 ==============
 
-The Nashorn engine that comes with Java 8 isn’t fully compliant with Javascript Harmony because multiline strings has a different syntax turning .js files incompatible with other engines. But provides some scripting advantages via the `-scripting` flag as the syntax to evaluate commands in back-ticks returning its output into a string (e.g. ```echo a` == "a\n"``).
+The Nashorn engine that comes with Java 8 isn’t fully compliant with Javascript Harmony because multiline strings has a different syntax turning .js files incompatible with other engines. But provides some advantages integrating with the JVM or Java classes and scripting capabilities via the `-scripting` flag as the syntax to evaluate commands in back-ticks returning its output into a string (e.g. ```echo a` == "a\n"``).
 
 http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html
 
