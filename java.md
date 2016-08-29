@@ -6,10 +6,26 @@ A try-with-resources statement in Java 7 is used to close resources automaticall
 https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
 
 ```java
+
+class T implements AutoCloseable { /* implementation */ }
+class U implements AutoCloseable { /* implementation */ }
+
 try (T t = T(); U u = U()) {
  System.out.println(t);
  System.out.println(u);
 } // finally { u.close(); t.close() }
+```
+
+```python
+class T: pass
+class U: pass
+
+with T() as t:     # t.__enter__()
+    with U() as u: # u.__exit__()
+        print(t)
+        print(u)
+    # u.__exit__()
+ # t.__exit__()
 ```
 
 Nashorn engine
